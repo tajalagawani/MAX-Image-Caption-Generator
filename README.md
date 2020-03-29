@@ -1,8 +1,5 @@
-[![Build Status](https://travis-ci.org/IBM/MAX-Image-Caption-Generator.svg?branch=master)](https://travis-ci.org/IBM/MAX-Image-Caption-Generator) [![Website Status](https://img.shields.io/website/http/max-image-caption-generator.max.us-south.containers.appdomain.cloud/swagger.json.svg?label=api+demo)](http://max-image-caption-generator.max.us-south.containers.appdomain.cloud/)
 
-[<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">](http://ibm.biz/max-to-ibm-cloud-tutorial)
-
-# IBM Developer Model Asset Exchange: Image Caption Generator
+#  Image Caption Generator
 
 This repository contains code to instantiate and deploy an image caption generation model. This model generates captions from a fixed vocabulary that describe the contents of images in the [COCO Dataset](http://cocodataset.org/#home). The model consists of an _encoder_ model - a deep convolutional net using the Inception-v3 architecture trained on [ImageNet-2012 data](http://www.image-net.org/challenges/LSVRC/2012/) - and a _decoder_ model - an LSTM network that is trained conditioned on the encoding from the image _encoder_ model. The input to the model is an image, and the output is a sentence describing the image content.
 
@@ -151,6 +148,3 @@ To run the Flask API app in debug mode, edit `config.py` to set `DEBUG = True` u
 
 To stop the Docker container, type `CTRL` + `C` in your terminal.
 
-## Links
-
-* [Image Caption Generator Web App](https://developer.ibm.com/patterns/create-a-web-app-to-interact-with-machine-learning-generated-image-captions): A reference application created by the IBM CODAIT team that uses the Image Caption Generator
